@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
+
 Auth::routes();
 
 
@@ -29,3 +30,4 @@ Route::middleware('auth')
         Route::get('/', 'AdminController@index')->name('dashboard');
         Route::resource('posts', 'PostController');
    });
+
