@@ -76,7 +76,9 @@
                         @endif
                     @endauth
                 </div>
-            @endif
+            @endif            
+            
+                
 
             <div class="content">
                 <h1>BoolPress</h1>

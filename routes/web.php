@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Admin\AdminController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,4 +30,8 @@ Route::middleware('auth')
         Route::get('/', 'AdminController@index')->name('dashboard');
         Route::resource('posts', 'PostController');
    });
+
+
+
+
 
